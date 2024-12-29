@@ -1,0 +1,81 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #335c67, #540b0e); /* Deep teal to maroon gradient */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .calculator {
+    background: linear-gradient(145deg, #fff3b0, #e09f3e); /* Soft yellow to warm orange */
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); /* Deeper shadow for more depth */
+    padding: 25px;
+    width: 350px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .calculator:hover {
+    box-shadow: 0 20px 40px rgba(255, 165, 0, 0.6); /* Glow effect on hover */
+  }
+  
+  .display {
+    background: linear-gradient(135deg, #e09f3e, #fff3b0); /* Orange to light yellow */
+    border-radius: 20px; /* More rounded display */
+    font-size: 32px; /* Slightly larger text */
+    font-weight: bold;
+    text-align: right;
+    padding: 20px;
+    margin-bottom: 30px;
+    height: 80px; /* Taller for a prominent look */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #335c67; /* Deep teal for text */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4); /* Stronger text shadow */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Floating effect for the display */
+    border: 3px solid #ffd766; /* Golden border to separate it from the container */
+  }
+  
+  .buttons button {
+    background: linear-gradient(145deg, #e09f3e, #9e2a2b); /* Bright orange to deep red gradient */
+    border: none;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+    margin: 6px;
+    width: 70px;
+    cursor: pointer;
+    color: #ffffff;
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.4), 0 8px 15px rgba(0, 0, 0, 0.4); /* Inner shadow for tactile look */
+    transition: transform 0.3s, box-shadow 0.3s ease, background-color 0.3s;
+  }
+  
+  .buttons button:nth-child(odd) {
+    background: linear-gradient(145deg, #fff3b0, #ffd766); /* Bright cream to yellow */
+    color: #335c67; /* Deep teal text */
+  }
+  
+  .buttons button:nth-child(even) {
+    background: linear-gradient(145deg, #9e2a2b, #540b0e); /* Rich red gradient */
+  }
+  
+  .buttons button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(255, 203, 107, 0.5); /* Glow effect on hover */
+  }
+  
+  .buttons button:active {
+    transform: translateY(2px);
+    box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.6), 0 2px 5px rgba(0, 0, 0, 0.3); /* Press effect */
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+  
